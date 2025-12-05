@@ -6,8 +6,8 @@ A set of Claude Code agents, skills, and slash commands for building web-app MVP
 
 This repository provides a complete toolkit for taking a product idea from concept to implementation-ready specs using Claude Code's agent system. It includes:
 
-- **7 Specialized Agents** for product, design, branding, and development work
-- **15+ Skills** providing deep-dive methodologies
+- **11 Specialized Agents** for product, design, branding, and development work
+- **23+ Skills** providing deep-dive methodologies
 - **25+ Slash Commands** for quick artifact generation
 - **Multi-MVP Support** with isolated workspaces
 
@@ -89,22 +89,58 @@ Brand and marketing design for visual identity work.
 ### Nest.js Developer (`nestjs-developer`)
 Senior backend developer specialized in Nest.js and Node.js/TypeScript.
 
+**Skills:** `dev-architecture`, `dev-api-design`, `dev-database-design`, `dev-backend-implementation`, `dev-testing-strategy`, `dev-code-review`
+
 **Use for:** API design, backend architecture, database design, authentication, and server-side implementation planning.
 
 ### Next.js Developer (`nextjs-developer`)
 Senior frontend developer specialized in Next.js and React/TypeScript.
+
+**Skills:** `dev-architecture`, `dev-frontend-implementation`, `dev-testing-strategy`, `dev-code-review`
 
 **Use for:** Frontend architecture, component design, state management, and client-side implementation planning.
 
 ### React Native Developer (`react-native-developer`)
 Senior mobile developer specialized in React Native and Expo.
 
+**Skills:** `dev-architecture`, `dev-mobile-implementation`, `dev-testing-strategy`, `dev-code-review`
+
 **Use for:** Cross-platform mobile architecture, native integrations, and React Native implementation planning.
 
 ### Flutter Developer (`flutter-developer`)
 Senior mobile developer specialized in Flutter and Dart.
 
+**Skills:** `dev-architecture`, `dev-mobile-implementation`, `dev-testing-strategy`, `dev-code-review`
+
 **Use for:** Cross-platform mobile architecture, widget design, and Flutter implementation planning.
+
+### Fullstack Developer (`fullstack-developer`)
+Senior fullstack developer for end-to-end web application development.
+
+**Skills:** `dev-architecture`, `dev-api-design`, `dev-database-design`, `dev-backend-implementation`, `dev-frontend-implementation`, `dev-testing-strategy`, `dev-code-review`
+
+**Use for:** Complete web applications, rapid prototyping, and projects requiring holistic frontend-backend expertise.
+
+### DevOps Engineer (`devops-engineer`)
+Senior DevOps engineer for CI/CD, infrastructure, and deployment automation.
+
+**Skills:** `dev-architecture`, `dev-devops`, `dev-testing-strategy`
+
+**Use for:** CI/CD pipelines, Docker containerization, cloud infrastructure, and monitoring setup.
+
+### QA Engineer (`qa-engineer`)
+Senior QA engineer for test strategy, automation, and quality assurance.
+
+**Skills:** `dev-testing-strategy`, `dev-code-review`
+
+**Use for:** Test planning, automated testing, E2E tests, and quality assurance processes.
+
+### Tech Lead (`tech-lead`)
+Technical lead for architecture decisions, code quality, and team guidance.
+
+**Skills:** `dev-architecture`, `dev-api-design`, `dev-database-design`, `dev-code-review`, `dev-testing-strategy`, `dev-devops`
+
+**Use for:** Technical direction, architecture reviews, code review standards, and technology decisions.
 
 ---
 
@@ -305,10 +341,54 @@ cd claude-mvp-agents
 ## Contributing
 
 Contributions welcome! Areas of interest:
-- New agents (QA, DevOps, etc.)
+- New agents and specialized roles
 - Additional skills for existing agents
 - Workflow automation improvements
 - Documentation and examples
+
+---
+
+## Skills Reference
+
+### Product Owner Skills
+| Skill | Description |
+|-------|-------------|
+| `po-discovery` | User discovery, problems, personas, JTBD |
+| `po-market-research` | Market & competitor analysis |
+| `po-vision-strategy` | Vision, value props, strategic pillars |
+| `po-prioritization` | RICE scoring, MoSCoW, roadmap |
+| `po-prd-decomposition` | PRDs, epics, stories, acceptance criteria |
+
+### UI/UX Designer Skills
+| Skill | Description |
+|-------|-------------|
+| `ux-design-brief` | Design briefs from PRDs |
+| `ux-information-architecture` | IA and user flows |
+| `ux-wireframes` | Wireframe specifications |
+| `ux-design-system-integration` | Design system mapping |
+| `ux-ui-plan-review` | UI plan reviews |
+| `ux-ui-plan-revision` | Revisions based on feedback |
+| `ux-high-fidelity-plan` | High-fidelity design specs |
+
+### Graphic Designer Skills
+| Skill | Description |
+|-------|-------------|
+| `gd-logo-briefs` | Logo design briefs |
+| `gd-brand-assets` | Brand asset specifications |
+| `gd-ad-banner-briefs` | Ad banner design briefs |
+
+### Developer Skills
+| Skill | Description |
+|-------|-------------|
+| `dev-architecture` | System architecture design, tech stack selection |
+| `dev-api-design` | REST/GraphQL API design, OpenAPI specs |
+| `dev-database-design` | Database schemas, ERD, indexes, migrations |
+| `dev-backend-implementation` | Backend module structure, services, DTOs |
+| `dev-frontend-implementation` | Component architecture, state management |
+| `dev-mobile-implementation` | Mobile app architecture, native features |
+| `dev-testing-strategy` | Test planning, automation, coverage goals |
+| `dev-code-review` | Code quality, security, performance reviews |
+| `dev-devops` | CI/CD, Docker, infrastructure, monitoring |
 
 ---
 
