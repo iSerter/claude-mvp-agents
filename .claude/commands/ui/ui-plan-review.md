@@ -9,12 +9,12 @@ allowed-tools: Bash(mkdir:*), Write(*), Read(*)
 ## Context
 
 - MVP Slug: $ARGUMENTS
-- Config: !`cat workspaces/$ARGUMENTS/config.json 2>/dev/null || echo "MVP_NOT_FOUND"`
-- Design Brief: !`cat workspaces/$ARGUMENTS/ui-ux/design-brief/design-brief.md 2>/dev/null || echo ""`
-- IA: !`cat workspaces/$ARGUMENTS/ui-ux/information-architecture/information-architecture.md 2>/dev/null || echo ""`
-- Wireframes: !`cat workspaces/$ARGUMENTS/ui-ux/wireframes/wireframes.md 2>/dev/null || echo ""`
-- Hi-Fi Specs: !`cat workspaces/$ARGUMENTS/ui-ux/high-fidelity/high-fidelity-specs.md 2>/dev/null || echo ""`
-- PRD: !`cat workspaces/$ARGUMENTS/product/prd/prd.md 2>/dev/null || echo ""`
+- Config Path: `workspaces/$ARGUMENTS/config.json`
+- Design Brief Path: `workspaces/$ARGUMENTS/ui-ux/design-brief/design-brief.md`
+- IA Path: `workspaces/$ARGUMENTS/ui-ux/information-architecture/information-architecture.md`
+- Wireframes Path: `workspaces/$ARGUMENTS/ui-ux/wireframes/wireframes.md`
+- Hi-Fi Specs Path: `workspaces/$ARGUMENTS/ui-ux/high-fidelity/high-fidelity-specs.md`
+- PRD Path: `workspaces/$ARGUMENTS/product/prd/prd.md`
 - Timestamp: !`date +%Y-%m-%d`
 
 ## Instructions

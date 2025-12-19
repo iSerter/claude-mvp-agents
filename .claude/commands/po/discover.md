@@ -9,7 +9,7 @@ allowed-tools: Bash(mkdir:*), Write(*), Read(*)
 ## Context
 
 - MVP Slug: $ARGUMENTS
-- Config: !`cat workspaces/$ARGUMENTS/config.json 2>/dev/null || echo "MVP_NOT_FOUND"`
+- Config Path: `workspaces/$ARGUMENTS/config.json`
 - Timestamp: !`date +%Y-%m-%d`
 
 ## Instructions
@@ -18,10 +18,10 @@ You are performing **Product Discovery** for the MVP workspace specified above.
 
 ### Pre-check
 
-1. **Verify MVP exists**: Check if `workspaces/{mvp-slug}/config.json` exists
-2. If the config shows "MVP_NOT_FOUND", inform the user:
+1. **Verify MVP exists**: Read `workspaces/$ARGUMENTS/config.json` using the Read tool
+2. If the file doesn't exist, inform the user:
    ```
-   ❌ MVP workspace not found: {mvp-slug}
+   ❌ MVP workspace not found: $ARGUMENTS
    
    Run /start-mvp {mvp-name} "description" first to create a workspace.
    ```

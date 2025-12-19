@@ -9,8 +9,8 @@ allowed-tools: Bash(mkdir:*), Write(*), Read(*)
 ## Context
 
 - MVP Slug: $ARGUMENTS
-- Config: !`cat workspaces/$ARGUMENTS/config.json 2>/dev/null || echo "MVP_NOT_FOUND"`
-- Discovery: !`cat workspaces/$ARGUMENTS/product/discovery/discovery.md 2>/dev/null || echo ""`
+- Config Path: `workspaces/$ARGUMENTS/config.json`
+- Discovery Path: `workspaces/$ARGUMENTS/product/discovery/discovery.md`
 - Timestamp: !`date +%Y-%m-%d`
 
 ## Instructions

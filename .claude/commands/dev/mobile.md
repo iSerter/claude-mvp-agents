@@ -9,9 +9,7 @@ allowed-tools: Bash(mkdir:*), Write(*), Read(*)
 ## Context
 
 - MVP Slug & Framework: $ARGUMENTS
-- Config: !`cat workspaces/$(echo $ARGUMENTS | awk '{print $1}')/config.json 2>/dev/null || echo "MVP_NOT_FOUND"`
-- Architecture: !`cat workspaces/$(echo $ARGUMENTS | awk '{print $1}')/code/architecture/architecture.md 2>/dev/null || echo ""`
-- Hi-Fi Specs: !`cat workspaces/$(echo $ARGUMENTS | awk '{print $1}')/ui-ux/high-fidelity/high-fidelity-specs.md 2>/dev/null || echo ""`
+- Note: Extract MVP slug from first argument (before any space or framework name)
 - Timestamp: !`date +%Y-%m-%d`
 
 ## Instructions
@@ -24,9 +22,10 @@ Parse the arguments:
 
 ### Pre-check
 
-1. **Verify MVP exists**: Check if config was loaded successfully
-2. If "MVP_NOT_FOUND", inform user to run `/start-mvp` first
-3. Determine framework (default: react-native)
+1. **Parse arguments**: Extract MVP slug (first argument) and framework (second argument, default: react-native)
+2. **Verify MVP exists**: Read `workspaces/{mvp-slug}/config.json` using the Read tool
+3. If the file doesn't exist, inform user to run `/start-mvp` first
+4. Read architecture and hi-fi specs files if they exist
 
 ---
 

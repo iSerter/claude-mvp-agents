@@ -9,10 +9,10 @@ allowed-tools: Bash(mkdir:*), Write(*), Read(*)
 ## Context
 
 - MVP Slug: $ARGUMENTS
-- Config: !`cat workspaces/$ARGUMENTS/config.json 2>/dev/null || echo "MVP_NOT_FOUND"`
-- Wireframes: !`cat workspaces/$ARGUMENTS/ui-ux/wireframes/wireframes.md 2>/dev/null || echo ""`
-- Design Brief: !`cat workspaces/$ARGUMENTS/ui-ux/design-brief/design-brief.md 2>/dev/null || echo ""`
-- Brand: !`cat workspaces/$ARGUMENTS/graphics/brand-assets/brand-guidelines.md 2>/dev/null || echo ""`
+- Config Path: `workspaces/$ARGUMENTS/config.json`
+- Wireframes Path: `workspaces/$ARGUMENTS/ui-ux/wireframes/wireframes.md`
+- Design Brief Path: `workspaces/$ARGUMENTS/ui-ux/design-brief/design-brief.md`
+- Brand Path: `workspaces/$ARGUMENTS/graphics/brand-assets/brand-guidelines.md`
 - Timestamp: !`date +%Y-%m-%d`
 
 ## Instructions
